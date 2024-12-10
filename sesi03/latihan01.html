@@ -67,7 +67,13 @@
                 }
                 if(pil=="ftoc"){
                     nF = $("#txF").val()
-                    //....
+                    nC = 5/9*(nF-30)
+                    txHASIL = "<h3>Konversi Nilai Fahrenheit ke Celcius</h3>"
+                    txHASIL +="°C = 5/9 X (°F-30)<br>"
+                    txHASIL +="°C = 5/9 X ("+nF+" - 30)<br>"
+                    txHASIL +="°C = "+nC+"°"
+                    $("#txC").val(nC)
+                    $("#txHASIL").html(txHASIL)
                 }
             })
         })
