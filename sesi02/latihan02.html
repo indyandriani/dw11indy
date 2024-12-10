@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan jQuery 02</title>
+</head>
+<body>
+    
+  <input type="text" id="txNAMA">
+  <button id="cmdNAMA">Get Name</button>
+
+  <p class="viewNAMA">--Name--</p>
+
+    
+  <script src="../jquery3.7.js"></script> 
+  <script>
+    $(function(){
+        $("#cmdNAMA").on("click",function(){
+            let name = $("#txNAMA").val()
+            console.log(name)
+            $(".viewNAMA").html(name)
+        })
+    })
+  </script> 
+
+</body>
+</html>
